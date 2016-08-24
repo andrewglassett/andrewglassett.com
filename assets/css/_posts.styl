@@ -1,0 +1,39 @@
+#posts
+  +below(700px)
+    background: graybrand
+  .posts
+    center(940px)
+    a
+      // col(1/2)
+      col()
+      width: 48%
+      text-decoration: none
+      text-align: center
+      padding: 1em
+      margin-right: 2%
+      border-bottom: none
+      color: darkbrand
+      +below(700px)
+        col()
+
+        margin-bottom: 1em
+        padding: 2em 0
+        text-align: center
+        background: white
+      .img
+        col()
+        img
+          border: none
+      .text
+        col()
+        +below(700px)
+          h3
+            font-size: 1.5em
+      &:hover
+        transform: scale(1.04545)
+        background: white
+        box-shadow: 0px 0px 100px -9px rgba(65,0,246,.3);
+        +below(1000px)
+          transform:none
+          outline: none
+          box-shadow: none

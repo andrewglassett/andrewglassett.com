@@ -1,0 +1,111 @@
+#post
+  col()
+  background: white
+  .info
+    col()
+    border-bottom: 2px solid graybrand
+    background-color: white
+    margin: 0
+    padding: 1em 0
+    +below(800px)
+      padding: 0
+    a.back
+      col(1/3)
+      padding: 1em
+      border-right: 2px solid #EEE
+      border-bottom: none
+      text-align: center
+      +below(800px)
+        col()
+        text-align: center
+        border: none
+      color: andrew2
+      &:hover
+        text-decoration: underline
+        // background-color: hoverbrand
+    .workers
+      font-size: 1em
+      col(2/3)
+      +below(800px)
+        background-color #EEE
+        width: 100%
+      // padding: 1em 1em
+      ul
+        inline-list()
+        font-size: 1em
+        line-height: 3.2
+        +below(800px)
+          text-align: center
+          center(800px)
+          padding: 0em 1em
+        li
+          margin: 0 1em 0 0
+          +below(800px)
+            text-align: center
+          a
+            margin: 0 0 0 .25em
+  .hero
+    col()
+    height: 700px
+    background: lightbrand
+    +below(1000px)
+      height: 400px
+    h1
+      text-align: center
+      span
+        color: white
+        text-align: center
+        letter-spacing: -1px;
+        background: rgba(65,0,246, 0.4);
+        line-height: 2
+        padding: 10px
+  .hero.styleguide
+    background-image: url('../img/case_studies/styleguide/styleguide-hero.jpg')
+    background-size: cover
+  .hero.waka
+    background-image: url('../img/case_studies/wakaflocka/waka-hero.jpg')
+    background-size: cover
+  .hero.intermedia
+    background-image: url('../img/case_studies/intermedia/intermedia-hero.jpg')
+    background-size: cover
+  .hero.mobile
+    background-image: url('../img/case_studies/mobile_analytics/mobile-hero1.jpg')
+    background-size: cover
+  .hero.intel
+    background-image: url('../img/case_studies/intel/intel-hero.jpg')
+    background-size: cover
+  .hero.vicenews
+    background-image: url('../img/case_studies/vice/vicenews-hero.jpg')
+    background-size: cover
+  .img-lg
+    center(1400px)
+    padding: 4em 0
+  .img-md
+    center(800px)
+    padding: 4em 0
+  .img-height
+    max-height: 600px
+
+  .story
+    col()
+    +below(900px)
+      padding: 2em 1em
+    h2, p
+      center(800px)
+    p:nth-child(2)
+      max-width: 1000px
+
+  .title
+    col()
+    margin-top: 4em
+    // +below(1000px)
+    //   margin-left:1em
+    //   margin-right:1em
+    h3
+      center(940px)
+      line-height: 3
+      font-size: 1em
+      font-style: italic
+      text-transform: uppercase
+      letter-spacing: 4px
+      border-bottom: 2px solid graybrand

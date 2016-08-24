@@ -1,0 +1,70 @@
+//- ---
+//- title: 'Developing My Own Website'
+//- date: 9/23/2014
+//- _content: false
+//- thumbnail: "andrewglassett.png"
+//- ---
+//- 
+//- extends ../views/_layout-main
+//- 
+//- block content
+//-   .info
+//-     a.back(href='/#posts') &laquo; Back Home
+//-     .workers
+//-       ul
+//-         li Design, Development, UX:
+//-           a(href='//andrewglassett.com' target='_blank') Me
+//-         li Link:
+//-           a(href='//github.com/andrewglassett/andrewglassett.com' target='_blank') Github Source
+//- 
+//- 
+//-   .story
+//-     :markdown
+//-       #Developing my own website, because why not?
+//-       ![Code inception](../img/case_studies/andrewglassett/andrew-header.jpg)
+//- 
+//-       ## The Problem
+//-       My bounce rate is high, and that is bad. People that are checking out my website are generally those looking to hire or collaborate and I want them to stick around long enough to get an idea of what I am really about. 
+//-       
+//-       ## A Little History
+//-       I have owned andrewglassett.com for 5 years now, and in that time I have redesigned the site at least 10 times. My website has been on Wordpress, Squarespace, Ghost, Jekyll, and even my own markup and style. Wordpress can be slow, Squarespace a little rigid, and Ghost requires me to change my hosting. Using my own markup can be difficult to update the content and style.
+//-       <div>
+//-       <img src="../img/case_studies/andrewglassett/andrew-old.jpg">
+//-       </div>
+//-       
+//-       >Some old iterations of my site
+//-       
+//-       ##Enter Static
+//-       I have been interested in static site generation since I first heard of [Jekyll](http://jekyllrb.com/) in 2012 but it wasn't until 2014 that static site generators became useful to non developers. I personally find [Roots](http://roots.cx) to be the most interesting and expandable of the generators, and with the addition of dynamic content, it was a no brainer. It took a little bit to get used to the jade, stylus, and coffeescript stack, but now I can never see myself going back to editing vanilla HTML, CSS, and Javascript.
+//-       
+//-       ###Scoping Selectors
+//-       I have read quite a bit about OOCSS/BEM principles and decided that for my uses it is the best for me to scope my pages dependent on a body ID. Roots allows me to easily create a jade partial based on "views", which then can be matched to an accompanying stylus file.
+//-       <div>
+//-       ![Example of Scoping CSS](../img/case_studies/andrewglassett/andrew-scoping1.jpg)
+//-       ![Example of Scoping CSS](../img/case_studies/andrewglassett/andrew-scoping2.jpg)
+//-       </div>
+//-       
+//-       This style of scoping allows me to keep the names of my selectors short and meaningful, but I am well aware that this kind of system will not scale very well. It works perfectly for my situation, and allows for the kind of growth that I project.
+//-       
+//-       ###Dynamic Content
+//-       The most exciting part for me is when I was able to figure out how to do some dynamic content. It is bringing my website closer to the ease of Wordpress in updating, but with out all the overhead and PHPness. 
+//-       
+//-       ```
+//-       #posts
+//-         ul
+//-           each post in site.posts.all()
+//-               li
+//-                 .post-thumbnail
+//-                   a(href=post._url)= post.title
+//-                     img(src="../img/#{post.thumbnail}")
+//-       ```
+//-       
+//-       By injecting this little bit of code anywhere on my site, the browser renders a link to every item that is in my "posts" folder. Now the only thing I need to do is create a new post, and a link to it automatically appears. A small change like this makes it just that much easier to update my website and hopefully reach my goal of reduced bounce rate.
+//-       
+//-       ##Early Results
+//-       Just 2 weeks after launching the dynamic content version of my site, I have seen my bounce rate decrease from 84% to 62%. The ultimate goal is to reach a 50% bounce rate, and all that would require is more effort on my part to create content that is compelling to my users.
+//-       
+//-       Update: Three weeks after launch we have reached the goal:
+//-       <div>
+//-       ![The Goal](../img/case_studies/andrewglassett/andrew-update.jpg)
+//-       </div>

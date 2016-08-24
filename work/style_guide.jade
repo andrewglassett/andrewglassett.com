@@ -1,0 +1,76 @@
+---
+title: 'Style Guide'
+_content: false
+thumbnail: 'styleguide-thumb.jpg'
+---
+
+extends ../views/_layout-main
+
+block content
+  #post
+    .info
+      a.back(href='/#posts') &larr; Back Home
+      .workers
+        ul
+          li Design, Code, Branding:
+            a(href='//andrewglassett.com' target='_blank') Me
+          li Link:
+            a(href='http://design.theorchard.io/styleguide-proposed/index.html' target='_blank') Styleguide
+    .hero.styleguide
+      h1
+        span Mapping a Trail Through the Style Guide Forest
+    .story
+      .caption 
+        p An application without a styleguide is like hiking without navigation. You may eventually "arrive" somewhere, but you may ask: How did I get here? How do you get back? Where do I go next?
+      h2 Style Guides are the Compass
+      p More than just rules about style, a good styleguide paints a picture about where a brand is headed, especially if you are redesigning. The more context designers provide as to where, when, how and why a particular style should be used, the less confusing it will be anyone who ends up needing to understand a design concept down the road. 
+      p Engineers traditionally have the most to gain from these guidelines, but creating a clear and concise style guide will help other designers have less confusion about a how a particular component / style should look and behave. It is also beneficial for product managers and anyone who is dealing with the overall strategy of a brand or product to see how we speak to our users via our interface. How do our users know what they should do next? How do they get more immediate information? 
+      h2 Inconsistencies are Hard to Maintain
+      p One of the biggest problems in modern application design, and especially when you work at a company driven by data, is the problem of consistency. In the current suite of products I am designing, I concurrently work with 4-5 different squads, each of which have their own goals and user types. We have identified at least 6 very different users, who are spread out between squads. It is complex. 
+      p No matter how organized we are, there always seems to be someone who gets left out, whether that is a particular type of user, or even up to an entire squad or business line. Because of this complexity, creating a visual language is challenging. One of my overarching goals is to keep the style guide as small and consistent as possible, and to only add a new component once there is a specific need from more than one party.  This way, every component ends up being used at least twice, and is therby doesn’t fall under the definition of custom element.
+      .img-md
+        img(src='../img/case_studies/styleguide/buttons.jpg')
+        .caption 
+          p Oh yes, these buttons will be consistent across our products.
+      h2 What We Did First
+      p Being there was no legacy styleguide, I started by cranking out a number of designs for a bunch of different views of the application with Sketch. This was a good first step, because it allowed me to be a little creative, and simultaneously affect the UI and branding elements. We did some testing of both company and users to find some basic preferences.
+      
+      .img-lg
+        img(src='../img/case_studies/styleguide/sidebyside.jpg')
+        .caption 
+          p A quick look at the old app on the left verses the new look and feel on the right.
+        
+      p Next I created a high fidelity prototype of these pages and shared them with stakeholders. We received very positive feedback, and after a few more iterations the team felt confident that this was the correct direction. It was time to dissect the individual components from the designs and put them all on a page
+      .img-md
+        img(src='../img/case_studies/styleguide/sketch.jpg')
+        .caption 
+          p A few elements from the Sketch file.
+      h2 Transferring Ideas To Code
+      p We had a great start, but to make these concepts useful to the entire organization, we needed to present the styleguide as a living document. I took the concepts from the svg style guide and translated them to a code version which was then hosted on a CDN. It also pulled the CSS from our current live application, which is nice because it meant we had reached our goal of creating a living styleguide.
+      .img-md
+        img(src='../img/case_studies/styleguide/styleguide-code.jpg')
+        .caption 
+          p This first version uses <a href='https://github.com/styledown/styledown' target='_blank'>Styledown</a> a markdown based styleguide generator.
+      p It was very useful in portraying the vision of the redesign to everyone, especially for those teams who were working to reduce the number of diffs through the applications. 
+      p The biggest use was that of debugging the CSS. Because we had all of the elements on one page, we could easily demonstrate the issues that come along with the cascade.
+      p This first version of the styleguide was immediately useful to most everyone, but it was obvious to me that this was a stop gap solution. To get a styleguide that was truly powerful, it would need to be included in the actual build process of the app. It needed to eventually turn into a pattern library.
+      h2 What I Learned
+      p It is very easy get out of sync if you aren’t paying attention. I think there are currently too many variables that make this current styleguide somewhat unstable. 
+      p If an engineer is unaware that there are existing styles and then creates his/her own solution, it could potentially carry over to other parts of the application.
+      p If a designer doesn’t understand the intended UX of a particular element, their designs weaken the system as a whole. 
+      p Maintenance is slightly painful. I really enjoy working on style guides, but when updating or adding a component, I have to manually change a few files and then update the version on the CDN. 
+
+      p Research is crucial, it is important that I continue to ask questions, such as who will be using this style guide? What do they need to complete their tasks? Are there other groups that could benefit from this information?
+      h2 Version 2: The Future
+      p The immediate future of this version of the style guide is to make sure that is portable and shareable. Creating a github repo would be a good first place to create a history. Also, the application's CSS files have become programmatically versioned, which means we need to update our current styleguide to keep in sync. This is a little tricky because the current styleguide lives outside of build process. 
+
+      p The bigger future goal would be to use React as our main source of style guiding. Currently, 1/4 of our products are using React, but that number is projected to go higher. When we hit 50% of React based products, it will be time to use React to render our styles for us during the build process. 
+
+      p This is better for a lot of reasons, the most important being that the styleguide will always be in sync because it will only render available components. This would be nice for me personally because I could spend less time implementing the style guide and more time crafting the language of the design system. 
+      .img-md
+        img(src='../img/case_studies/styleguide/react.jpg')
+        .caption 
+          p The first inklings of the React Styleguide.
+          
+    .title
+      h3 Check out another case study:
