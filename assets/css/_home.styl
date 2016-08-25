@@ -1,32 +1,40 @@
 #home
-  col()
-  background: white
-  #top
-    center(900px)
-    +below(1000px)
-      margin: 1em
-    #intro
-      col()
-      padding: 4em 0
-      .logo
-        col(1/5)
-        margin-top: 2em
-        +below(700px)
-          col()
-          margin: 0 auto
-        img
-          border: none
-          display: block
-          margin: auto
-
-      .blurb
-        col(4/5)
-        +below(700px)
-          col()
-          padding: 1em 0
-          text-align: center
-        p:first-child
-          font-size: 1.5em
+  #nav
+    col(1/4)
+    border-right: 1px solid graybrand
+    height: 100vh
+    .nav
+      margin: 20%
+  #body
+    col(3/4)
+  // col()
+  // background: white
+  // #top
+  //   center(900px)
+  //   +below(1000px)
+  //     margin: 1em
+  //   #intro
+  //     col()
+  //     padding: 4em 0
+  //     .logo
+  //       col(1/5)
+  //       margin-top: 2em
+  //       +below(700px)
+  //         col()
+  //         margin: 0 auto
+  //       img
+  //         border: none
+  //         display: block
+  //         margin: auto
+  //
+  //     .blurb
+  //       col(4/5)
+  //       +below(700px)
+  //         col()
+  //         padding: 1em 0
+  //         text-align: center
+  //       p:first-child
+  //         font-size: 1.5em
         // h1, h2
         //   background: url('/img/about/logo-bg.png') repeat
         //   -webkit-text-fill-color: transparent
