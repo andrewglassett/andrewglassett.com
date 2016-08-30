@@ -9,44 +9,60 @@ block content
             img(src='../img/about/apaul2.svg' title='Andrew Glassett Lead Product Designer') 
         ul
           li
-            a(href='#about') About 
+            a(href='#services') Services
           li
             a(href='#work') Work
+          li
+            a(href='#testimonials') Testimonials
           li
             a(href='#contact') Contact
     #body
       header
-        h1 Let's make your product dreams come to life!
+        h1 Let's make your product dreams a reality.
       #services
-        p I have led product focused design projects at <a href='http://theorchard.com' target='_blank'>The Orchard</a> / <a href='http://sonymusic.com' target='_blank'>Sony Music</a>, <a href='http://carrot.is' target='_blank'>Carrot Creative</a>, <a href='http://vice.com' target='_blank'>VICE</a> & <a href='http://atlanticrecords.com' target='_blank'> Atlantic Records</a>. I specialize in kickstarting the design process, and can help your company at any phase of the process:
+        p I have led product design projects at <a href='http://theorchard.com' target='_blank'>The Orchard</a> / <a href='http://sonymusic.com' target='_blank'>Sony Music</a>, <a href='http://carrot.is' target='_blank'>Carrot Creative</a>, <a href='http://vice.com' target='_blank'>VICE</a> & <a href='http://atlanticrecords.com' target='_blank'> Atlantic Records</a>. I specialize in kickstarting the design process, and can help at every step of the way.
+        h2 What can I do for you?
         .value
-          .number 
-            h2 1 
+          .icon 
+            img(src='../img/about/idea.svg')
           .prop 
             h2 
-              | Lead design sprints that help define and validate 
-              a(href='http://example.com') validate 
+              | Lead design sprints that help 
+              a(href='/work/mobile_analytics') define and validate 
               | product ideas. 
         .value
-          .number 
-            h2 2
+          .icon 
+            img(src='../img/about/wireframe.svg')
           .prop 
-            h2 
-              | Create 
-              a(href='http://example.com') wireframes, prototypes and high fidelity designs 
+            h2
+              | Create
+              a(href='/work/vicenews') Wireframes, prototypes and high fidelity designs 
               | that communicate the design process
         .value
-          .number 
-            h2 3 
+          .icon 
+            img(src='../img/about/styleguide.svg') 
           .prop 
             h2 
-              | Design 
-              a(href='http://example.com') living styleguides 
+              | Develop a 
+              a(href='/work/style_guide') living styleguide 
               | and design systems that are future friendly and are easy to maintain.
       #work
-        #posts
+        .work
           h2 See some recent work:
-          include ../partials/_posts
+          #posts
+            include ../partials/_posts
       #testimonials
-
-      #contact
+        .testimonials
+          h2 Testimonials
+          .testimonial
+            img(src='../img/about/idea.svg')
+            h3 Rad Person, Very cool Title
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          .testimonial
+            img(src='../img/about/idea.svg')
+            h3 Rad Person, Very cool Title
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          .testimonial
+            img(src='../img/about/idea.svg')
+            h3 Rad Person, Very cool Title
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
