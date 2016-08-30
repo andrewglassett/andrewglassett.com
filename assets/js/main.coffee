@@ -22,7 +22,7 @@ require ['jquery', 'fitvid', 'modal', 'particle'], ($) ->
   lineColor: "#000000"
 
   $('.video, #modal').fitVids()
-  
+
   $(document).ready ($) ->
   $('#accordion').find('.accordion-toggle').click ->
     #Expand or collapse this panel

@@ -1,29 +1,27 @@
 #footer
-  center()
-  border-top: 2px solid graybrand
-  margin-top: 1em
-  padding: 2em 0
-  +below(800px)
-    padding: 0
-    border-top: none
-  ul
-    padding: 0
-    margin: 0
-    li
-      display: inline-block
-      margin-right: 1em
-      +below(800px)
-        background: graybrand
-        display: block
-        text-align: center
-        padding: 1em 0
-        margin: 1em 0
-        width: 100%
-        &:first-child
-          background: white
-      a
-        color: darkbrand
+  background: black
+  col()
+  .footer
+    center(1000px)
+    color: white
+    ul
+      padding: 2em
+      margin: 2em
+      li
+        display: inline-block
+        margin-right: 1em
         +below(800px)
-
-          padding: 1em
+          background: graybrand
+          display: block
+          text-align: center
+          padding: 1em 0
+          margin: 1em 0
           width: 100%
+          &:first-child
+            background: white
+        a
+          color: white
+          +below(800px)
+
+            padding: 1em
+            width: 100%
