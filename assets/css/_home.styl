@@ -1,33 +1,27 @@
 #home
   col()
   background: white
+  padding: 2em
+  +below(mobile)
+    padding: 0 2em
   #top
-    center(900px)
-    +below(1000px)
+    center(1300px)
+    +below(mobile)
       margin: 1em
     #intro
       col()
       padding: 4em 0
-      .logo
-        col(1/5)
-        margin-top: 2em
-        +below(700px)
-          col()
-          margin: 0 auto
-        img
-          border: none
-          display: block
-          margin: auto
+      +below(mobile)
+        padding: 0
 
       .blurb
-        col(4/5)
-        +below(700px)
+        // col(4/5)
+        +below(mobile)
           col()
           padding: 1em 0
           text-align: center
-        p:first-child
-          font-size: 1.5em
-        // h1, h2
-        //   background: url('/img/about/logo-bg.png') repeat
-        //   -webkit-text-fill-color: transparent
-        //   -webkit-background-clip: text
+        h3.big
+          font-size: 2em
+          line-height: 1.7
+          +below(mobile)
+            font-size: 1.5em

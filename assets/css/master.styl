@@ -9,7 +9,7 @@ base()
 }
 html
   box-sizing: border-box;
-  font-family: 'droid-serif', serif
+  font-family: "yrsa",sans-serif;
 
 body
   margin: 0 auto
@@ -21,14 +21,19 @@ h1
   font-size: 5em
   +below(1000px)
     font-size: 3em
+  font-weight: 100
 h2
   font-size: 3em
   +below(1000px)
     font-size: 2em
 h3
-  font-size: 1em
+  font-size: 2em
+
+h4
+  font-size: 1.5em
+
 p
-  font-size: 17px
+  font-size: 1.5em
   line-height: 1.7
 
 .center
@@ -36,9 +41,9 @@ p
   margin-left: auto
   margin-right: auto
 
-h1, h2, h3
-  font-family: "europa",serif;
-  font-weight: 700;
+h1, h2, h3, h4
+  font-family: "nimbus-sans", sans-serif;
+  font-weight: 500;
 
 h1 {
   opacity: 1;
@@ -141,7 +146,6 @@ blockquote
 
 .caption
   center(800px)
-  // background: lightbrand
   border-left:5px solid hoverbrand
   padding: .5em 1em
   color: darkbrand
@@ -159,13 +163,12 @@ a, a:visited
   padding: .2em 0em
   color: lightbrand
   text-decoration: none
-  // border-bottom: 4px solid darkbrand
+  border-bottom: 1px solid #f4f4f4
 
   &:hover
     // transform: scale(1.04545)
     // outline: 10px solid hoverbrand
     color: hoverbrand
-    border: none
     border-bottom: 3px solid hoverbrand
 
 @import '_footer'
@@ -174,3 +177,5 @@ a, a:visited
 @import '_post'
 @import '_about'
 @import '_posts'
+@import '_txtwav'
+@import '_prism'

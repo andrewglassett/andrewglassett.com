@@ -1,59 +1,50 @@
 #header
-  // border-bottom: 2px solid graybrand
+  col()
+  background: white
+  padding: 2em 2em 0
   nav
-    a
-      center(100%)
-      // position: fixed
-      text-align: center
-      padding: 1em
+    // padding: 2em 0
+    center(1300px)
+    +below(mobile)
+      padding: 2em 0 0 0
+    a.back
+      background: whitesmoke
+    a.logo
+      border-bottom: none
       &:hover
-        border: none
-        background: lightgray
-      img
-        border: none
-        text-align: center
-    h1
-      font-size: 1.2em
-      padding-top: 2em
+        border-bottom: none
 
-// #header
-//   col()
-//   // center(1440px)
-//   background: white
-//   +below(864px)
-//     position: relative
-//   nav
-//     a.back
-//       background: whitesmoke
-//     a, a:visited
-//       padding: 2em 6em
-//       display: block
-//       float: left
-//       text-decoration: none
-//       img
-//         width: 50px
-//         padding: 0
-//       &:hover
-//         background: green
-//         color: white
-//       +below(864px)
-//         float: none
-//         text-align: center
-//         width: 100%
-//         padding: 1em
-//     p
-//       font-size: .75em
-//       float: left
-//       padding 38px 10px
-//       max-width: 220px
-//       margin: 0
-//     ul
-//       inline-list()
-//       float: right
-//       +below(864px)
-//         text-align: center
-//         float: none
-//       li
-//         margin: 0
-//         +below(864px)
-//           width: 100%
+    a, a:visited
+      display: block
+      float: left
+      text-decoration: none
+      border-bottom: none
+      &:hover
+        border-bottom: 3px solid hoverbrand
+      img
+        width: 50px
+        padding: 0
+        border: none
+
+      +below(800px)
+        float: none
+        text-align: center
+        width: 100%
+        padding: 1em
+    p
+      font-size: .75em
+      float: left
+      padding 38px 10px
+      max-width: 220px
+      margin: 0
+    ul
+      inline-list()
+      float: right
+      +below(800px)
+        display: none
+        text-align: center
+        float: none
+      li
+        margin-left: 2em
+        +below(800px)
+          width: 100%

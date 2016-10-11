@@ -4,12 +4,12 @@ _content: false
 thumbnail: 'vicenews.jpg'
 ---
 
-extends ../views/_layout-main
+extends ../views/_single_post_layout
 
 block content
   #post
     .info
-      a.back(href='/#posts') &larr; Back Home
+      a.back(href='/#work') &larr; Back Home
       .workers
         ul
           li UX & Research:
@@ -19,12 +19,12 @@ block content
           li Link:
             a(href='https://play.google.com/store/apps/details?id=com.vice.news&hl=en' target='_blank') Vice News Android
     .hero.vicenews
-      h1
-        span A User Friendly MVP for Mobile News
+      //- h1
+      //-   span A User Friendly MVP for Mobile News
     .story
-      .caption 
-        p We built on what we knew from previous Vice News ventures and produce something for Android audiences.
-      h2 The Prep
+      //- .caption 
+      //-   p We built on what we knew from previous Vice News ventures and produce something for Android audiences.
+      h1 A User Friendly Mobile News application
       p We were fortunate to have some great information from Vice about their current audience. Vicenews.com and Vice News for iOS were launched several months previous to the Android version, and we scraped together what we could and made some decent assumptions.
       .img-lg
         img(src='../img/case_studies/vice/analytics.jpg')
