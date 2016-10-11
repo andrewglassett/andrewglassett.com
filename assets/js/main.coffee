@@ -2,6 +2,8 @@ require.config
   paths:
     jquery: '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min'
     fitvid: '/js/vendor/fitvids'
+    txtwav: '/js/vendor/txtwav.min'
+    prism: '/js/vendor/prism'
     modal: '/js/vendor/modal.min'
     particle: '/js/vendor/jquery.particleground.min'
 
@@ -14,15 +16,14 @@ require.config
     particle:
       deps: ['jquery']
 
-require ['jquery', 'fitvid', 'modal', 'particle'], ($) ->
-
+require ['jquery', 'fitvid', 'modal', 'particle', 'txtwav', 'prism'], ($) ->
 
   $("#home").particleground
   dotColor: "#000000"
   lineColor: "#000000"
 
   $('.video, #modal').fitVids()
-  
+
   $(document).ready ($) ->
   $('#accordion').find('.accordion-toggle').click ->
     #Expand or collapse this panel

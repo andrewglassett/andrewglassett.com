@@ -4,12 +4,12 @@ _content: false
 thumbnail: 'styleguide-thumb.jpg'
 ---
 
-extends ../views/_layout-main
+extends ../views/_single_post_layout
 
 block content
   #post
     .info
-      a.back(href='/#posts') &larr; Back Home
+      a.back(href='/#work') &larr; Back Home
       .workers
         ul
           li Design, Code, Branding:
@@ -17,12 +17,12 @@ block content
           li Link:
             a(href='http://design.theorchard.io/styleguide-proposed/index.html' target='_blank') Styleguide
     .hero.styleguide
-      h1
-        span Mapping a Trail Through the Style Guide Forest
+      //- h1
+      //-   span Mapping a Trail Through the Style Guide Forest
     .story
-      .caption 
-        p An application without a styleguide is like hiking without navigation. You may eventually "arrive" somewhere, but you may ask: How did I get here? How do you get back? Where do I go next?
-      h2 Style Guides are the Compass
+      //- .caption 
+      //-   p An application without a styleguide is like hiking without navigation. You may eventually "arrive" somewhere, but you may ask: How did I get here? How do you get back? Where do I go next?
+      h1 Creating a Styleguide from Scratch
       p More than just rules about style, a good styleguide paints a picture about where a brand is headed, especially if you are redesigning. The more context designers provide as to where, when, how and why a particular style should be used, the less confusing it will be anyone who ends up needing to understand a design concept down the road. 
       p Engineers traditionally have the most to gain from these guidelines, but creating a clear and concise style guide will help other designers have less confusion about a how a particular component / style should look and behave. It is also beneficial for product managers and anyone who is dealing with the overall strategy of a brand or product to see how we speak to our users via our interface. How do our users know what they should do next? How do they get more immediate information? 
       h2 Inconsistencies are Hard to Maintain
