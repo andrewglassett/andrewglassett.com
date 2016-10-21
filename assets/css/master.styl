@@ -60,7 +60,7 @@ h1 {
   -ms-transform: translateY(-20px);
   -webkit-transform: translateY(-20px);
 }
-h2 {
+h2 h3 {
   opacity: 1;
   transform: translateY(0);
   -ms-transform: translateY(0);
@@ -69,7 +69,22 @@ h2 {
   -webkit-transition: -webkit-transform .1s ease-in-out, opacity .1s ease-in-out;
 }
 
-.wf-loading h2 {
+.wf-loading h2 h3 {
+  opacity: 0;
+  transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+h3.txtwav {
+  opacity: 1;
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transition: transform 3s ease-in-out, opacity 3s ease-in-out;
+  -webkit-transition: -webkit-transform 3s ease-in-out, opacity 3s ease-in-out;
+}
+
+.wf-loading h3.txtwav {
   opacity: 0;
   transform: translateY(0px);
   -ms-transform: translateY(0px);
