@@ -2,27 +2,31 @@
   col()
   padding: 2em
   .posts
-    center(1375px)
     a.reg
       col()
       padding: 2em
+      margin-bottom: 2em
+      border-bottom: none
       &:hover
         background-color: graybrand
-        border-bottom: none
-      .img
-        col(4/5)
-        img
-          border: none
+
       .text
         col(1/5)
-        h3
-          border-bottom: 1px solid darkbrand
-          padding-bottom: 2em
         p
+          padding-top: 2em
           line-height: 1.5
         +below(700px)
           h3
             font-size: 1.5em
+      hr
+        width: 4em
+        float left
+        color: darkbrand;
+      .img
+        col(4/5)
+        img
+          border: none
+
     // a.sm
     //   col()
     //   width: 23%
