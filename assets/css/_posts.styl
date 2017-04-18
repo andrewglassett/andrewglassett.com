@@ -9,61 +9,37 @@
       border-bottom: none
       &:hover
         background-color: graybrand
+      +below(mobile)
+        background-color: graybrand
 
       .text
         col(1/5)
         p
           padding-top: 2em
           line-height: 1.5
-        +below(700px)
+          +below(mobile)
+            padding-top: 0
+            line-height 1
+            font-size 1.3em
+            margin-bottom 1em
+        +below(mobile)
+          col()
           h3
             font-size: 1.5em
+
       hr
         width: 4em
         float left
         color: darkbrand;
+        +below(mobile)
+          display none
+
       .img
         col(4/5)
         img
           border: none
+        +below(mobile)
+          col()
 
-    // a.sm
-    //   col()
-    //   width: 23%
-    //   text-decoration: none
-    //   margin-right: 2%
-    //   margin-bottom: 2%
-    //   border-bottom: none
-    //   color: darkbrand
-    //   +below(mobile)
-    //     width: 100%
-    //     margin-bottom: 8%
-    //   &:hover
-    //     opacity: .6
-    //   .img
-    //     col()
-    //     img
-    //       border: none
-    //   .text
-    //     col()
-    // a.med
-    //   col()
-    //   width: 33%
-    //   text-decoration: none
-    //   margin-right: 2%
-    //   margin-bottom: 2%
-    //   border-bottom: none
-    //   color: darkbrand
-    //   +below(mobile)
-    //     width: 100%
-    //     margin-bottom: 8%
-    //   &:hover
-    //     opacity: .6
-    //   .img
-    //     col()
-    //     img
-    //       border: none
-    //   .text
-    //     col()
   h4, p
     margin: 0
