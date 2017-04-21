@@ -1,6 +1,8 @@
 #posts
   col()
   padding: 2em
+  +below(mobile)
+    padding: 0em
   .posts
     a.reg
       col()
@@ -11,6 +13,7 @@
         background-color: graybrand
       +below(mobile)
         background-color: graybrand
+        padding: 0 2em
 
       .text
         col(1/5)
@@ -40,6 +43,7 @@
           border: none
         +below(mobile)
           col()
+          margin-bottom: 2em
 
   h4, p
     margin: 0

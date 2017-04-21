@@ -3,16 +3,16 @@
   background: white
   padding: 2em
   +below(mobile)
-    padding: 0 2em
+    padding: 0
   #top
     padding: 0em 2em
     +below(mobile)
       margin: 1em
+      padding: 1em
     #intro
       col()
       +below(mobile)
-        padding: 0
-
+        display:none
       .blurb
         +below(mobile)
           col()
@@ -23,3 +23,8 @@
           line-height: 1.7
           +below(mobile)
             font-size: 1.5em
+
+    #intro-mobile
+      col()
+      +above(mobile)
+        display: none
