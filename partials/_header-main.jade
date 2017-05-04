@@ -1,8 +1,54 @@
-nav
-	a.logo(href='/')
-		img(src='../img/about/apaul2.svg' title='Andrew Glassett Lead Product Designer') 
-	ul
-		li
-			a(href='#work') Work
-		li
-			a(href='about.html') About
+//- nav
+//- 	a.logo(href='/')
+//- 		img(src='../img/about/apaul2.svg' title='Andrew Glassett Lead Product Designer') 
+//- 	ul
+//- 		li
+//- 			a(href='#work') Work
+//- 		li
+//- 			a(href='about.html') About
+
+nav.top
+  .dropdownBackground
+    span.arrow
+  ul.cool
+    li
+      a(href='/about') About Me
+      .dropdown.dropdown1
+        .bio
+          img(src='http://andrewglassett.com/img/about/about4.jpg', height='200', width='200')
+          p
+            | Andrew Glassett is a nice guy and also a designer and developer. 
+            a Learn more about him
+    li
+      a(href='/#work') Work
+      ul.dropdown.courses
+        li
+          span.code ORCD
+          a(href='/work/mobile_analytics') Mobile Analytics
+        li
+          span.code Company 2 
+          a(href='/work/project.html') Project 2
+        li
+          span.code Company 3
+          a(href='/work/project.html') Project 3
+        li
+          span.code Company 4
+          a(href='/work/project.html') Project 4
+        li
+          span.code Company 5
+          a(href='/work/project.html') Project 5
+        li
+          span.code Company 6
+          a(href='/work/project.html') Project 6
+        li
+          span.code Company 7
+          a(href='/work/project.html') Project 7
+    li
+      a(href='#') Other Links
+      ul.dropdown.dropdown3
+        li
+          a.button(href='http://twitter.com/andrewglassett') Twitter
+        li
+          a.button(href='http://github.com/andrewglassett') Github
+        li
+          a.button(href='/resume.pdf') Download Resume

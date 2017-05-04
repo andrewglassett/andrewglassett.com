@@ -5,6 +5,7 @@ require.config
     txtwav: '/js/vendor/txtwav.min'
     prism: '/js/vendor/prism'
     modal: '/js/vendor/modal.min'
+    nav: '/js/vendor/nav'
     particle: '/js/vendor/jquery.particleground.min'
 
 
@@ -16,7 +17,7 @@ require.config
     particle:
       deps: ['jquery']
 
-require ['jquery', 'fitvid', 'modal', 'particle', 'txtwav', 'prism'], ($) ->
+require ['jquery', 'fitvid', 'modal', 'particle', 'txtwav', 'nav', 'prism'], ($) ->
 
   $("#home").particleground
   dotColor: "#000000"
