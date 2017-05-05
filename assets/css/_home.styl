@@ -2,18 +2,26 @@
   col()
   background: white
   padding: 2em
+  background: url(../img/about/avatar.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh
   +below(mobile)
-    padding: 0
+    padding: 0 2em
   #top
-    padding: 0em 2em
+    center(1300px)
     +below(mobile)
       margin: 1em
-      padding: 1em
     #intro
       col()
+      padding: 4em 0
       +below(mobile)
-        display:none
+        padding: 0
+
       .blurb
+        // col(4/5)
         +below(mobile)
           col()
           padding: 1em 0
@@ -24,7 +32,7 @@
           +below(mobile)
             font-size: 1.5em
 
-    #intro-mobile
-      col()
-      +above(mobile)
-        display: none
+      .blurb2
+        center(800px)
+        float: right
+        padding: 1em 0
