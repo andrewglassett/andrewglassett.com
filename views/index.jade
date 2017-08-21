@@ -2,10 +2,63 @@ extends _layout-main
 
 block content
   #home
-    #top
-      #intro
-        .blurb
-          h3.txtwav.slow.big Senior Product Designer with chops in Strategy & Development. 
-          h3.big Currently at <a href='http://theorchard.com' target='_blank'>The Orchard</a> / <a href='http://sonymusic.com' target='_blank'>Sony Music</a>, previously <a href='http://carrot.is' target='_blank'>Carrot Creative</a>, <a href='http://vice.com' target='_blank'>VICE</a> & <a href='http://atlanticrecords.com' target='_blank'> Atlantic Records</a>. 
-          p 
-            a(href='/about') More about me &rarr;
+    .header
+      h1.txtwav.slow.big I Help Companies 
+    .companies
+      a.company(href='/work/data_design')
+        .img
+          img(src='../img/brands/vimeo.svg')
+      a.company(href='/work/vicenews')
+        .img
+          img(src='../img/brands/vice.svg')
+      a.company(href='/posts/intel')
+        .img
+          img(src='../img/brands/carrot.svg')
+      a.company(href='/work/design_system')
+        .img
+          img(src='../img/brands/sony.svg')
+      a.company(href='/work/mobile_analytics')
+        .img
+          img(src='../img/brands/orchard.svg')   
+                 
+    .header#work
+      h2.txtwav.slow.big Solve Difficult Design Problems
+    .problems 
+      a.problem(href='/work/data_design') 
+        .img
+          img(src='../img/icons/data.svg' alt='data') 
+        .text
+          h3 How can we use <span>data</span> to uncover truth?
+          p How I wrangled some research at Vimeo to meet some metrics.
+          
+      a.problem(href='/work/design_system') 
+        .img 
+           img(src='../img/icons/system.svg' alt='design system')
+        .text
+          h3 How do we create a <span>design system</span> from scratch?
+          p How I helped Sony Music create a React based design system for their distribution platform.
+
+      a.problem(href='/work/mobile_analytics') 
+        .img
+          img(src='../img/icons/analytics.svg' alt='analytics') 
+        .text
+          h3 How do we make a <span>mobile analytics</span> experience delightful?
+          p How I helped create a first of it's kind mobile analytics application for The Orchard
+          
+      a.problem(href='/work/empathy_design') 
+        .img
+          img(src='../img/icons/empathy.svg', alt='empathy')
+        .text
+          h3 How can we use <span>empathy</span> to create a better experience?
+          p How I literally became a user to defeat design bias at The Orchard.
+      
+  .about 
+    .img
+      img(src='../img/about/about.jpg')
+        
+    .description
+      p Hello, nice to meet you, my name is Andrew Paul Glassett. I have been designing digital products &amp; processes for 10 years now. I love solving problems, especially when I can collaborate with teams.
+      p I champion efficiency and focus on delivering value to my users as soon as possible. 
+      
+
+  

@@ -1,0 +1,102 @@
+---
+title: 'Data Design for Vimeo'
+_content: false
+thumbnail: 'mobile-thumb.jpg'
+---
+
+extends ../views/_single_post_layout
+
+block content
+  #post
+    .info
+      a.back(href='/') &larr; Back Home
+      .workers
+        ul
+          li Strategy, UX, Design:
+            a(href='//andrewglassett.com' target='_blank') Me
+          li Engineering:
+            a(href='//vimeo.com' target='_blank') Vimeo
+    .hero.data_design
+
+    .story
+      .caption 
+        p How can we use data and research to make some quick design wins?
+      h1 Improving a Product Through Data and Testing
+      p Working for a 10 year old technology company means there are a lot of different sources of historical information, data and research. I am interested in taking a little from each of these categories and creating A/B tests that can be run quickly, and have significant impact on our metrics, user experience, and hopefully our bottom line.
+      
+      h2 The Background
+      .img-lg
+        img(src='../img/case_studies/data_design/clip-page.jpg')
+        .caption
+          p An example of the clip page on desktop and mobile devices.
+      p Watching a video on Vimeo.com or through mobile apps is a very important experience, one that has many eyes and goals for performance. While the majority of traffic happens through mobile apps, this page is a close second where people are linked to, and where they share from. 
+      p The current design has some great opportunities for the mobile web experience and I was tasked with increasing certain metrics on the page, while at the same time give the page a brand refresh.
+      
+      h2 Analytics 
+      .img-md
+        img(src='../img/case_studies/data_design/analytics.png')
+      p Traffic from social, especially Facebook is a major source of traffic to our mobile web experience. Monthly referalls hover around 10-15 million, and that gives us that many chances to get people more involved with Vimeo in the hopes that we can turn a percentage of those into creators who pay for upgrades.
+        
+      h2 The Metrics
+      p The metrics are pretty straightforward:
+      p 1. Increase the percentage of users who visit the clip page and then play a video (reduce the bounce rate)
+      p 2. Increase the percentage of users who share.
+      p 3. Increase the percentage of users who click the app install button
+      p 4. Increase total time spent watching
+
+
+      h2 Competitive Analysis
+      p So how have some other companies trying to solve some of these problems? I looked at a lot of different services, and some patterns started to emerge.
+      .img-lg
+        img(src='../img/case_studies/data_design/competitive-analysis.png')
+        .caption 
+          p Patterns that emerged included a lack of autoplay, and custom social sharing. 
+   
+      h2 Test 1 - The Play Button
+      p The first test was designed to challenge the placement of the play button. From some competitive analysis, I found that Vimeo was one of the only products that didn’t have the button. Only Vimeo and one other competitor didn’t have the play button centered.
+      .img-lg
+        img(src='../img/case_studies/data_design/play-button.png')
+        .caption 
+          p Example play buttons from many different products.
+      p The play button may or may not have a correlation with the metric of playing a video once landing on the page, and we wanted to get some data behind this concept. The plan was to run two tests, one that moved to the play button to the center, and a variation which made the play button 25% bigger.
+      .img-md
+        img(src='../img/case_studies/data_design/play-buttons.jpg')
+        .caption
+          p The control design, one with button that is centered, one that is 25% bigger.
+      
+      h2 Test 2 - The App Banner
+      .img-md
+        img(src='../img/case_studies/data_design/control-banner.jpg')
+        .caption 
+          p The current design. My hypothesis is that because the banner extends full width, users tend to overlook the banner.
+      p Based on patterns found in different mobile applications, I wanted to test a different version of the app banner, and see if various iterations would increase the number of taps to download the native app. We decided on a couple different variations to test placement, as well as the language in the button.
+      .img-md
+        img(src='../img/case_studies/data_design/banners.jpg')
+        .caption 
+          p Three different banner iterations. Two with floating buttons, and one in the header.
+          
+      h2 Test 3 - Sharing
+      p The last test was to try a few different variations on sharing. Currently sharing only happens within the context of the video, but I wanted to test if moving the share interaction outside of the video would result in a higher rate of shares. 
+      .img-md
+        img(src='../img/case_studies/data_design/share.jpg')
+        .caption 
+          p Three very subtly different share buttons.
+      
+      h2 The Results 
+      p The tests have just been put into the testing framework, and we are waiting for the business intelligence team to give us verified results. The final live designs will be based on the results of these tests, but If my assumptions are proven correct, the final designs should look as so:
+      .img-md
+        img(src='../img/case_studies/data_design/redesigned-mobile.jpg')
+        .caption 
+          p Redesign concept for when someone clicks from Facebook.
+      .img-md
+        img(src='../img/case_studies/data_design/redesigned-after.jpg')
+        .caption 
+          p What the user would see after watching the video.
+      .img-md
+        img(src='../img/case_studies/data_design/redesigned-ad-detail.jpg')
+        .caption 
+          p A subtle upsell to the user that hopefully convinced them to get the app.
+
+
+    //- .title
+    //-   h3 Check out another case study:

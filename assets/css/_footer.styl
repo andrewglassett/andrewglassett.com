@@ -1,32 +1,30 @@
 #footer
   col()
+  background darkbrand
   padding: 2em
   .footer
-    center(1300px)
-    border-top: 2px solid graybrand
-    padding-top: 2em
-    margin-top: 1em
     +below(800px)
       padding: 0
       border-top: none
     ul
       col()
       padding: 0
-      margin: 0
+      // margin: 2em
       li
         display: inline-block
         margin-right: 1em
+        &:first-child
+          color: white
         +below(800px)
-          background: graybrand
-          display: block
+          col()
           text-align: center
+          border: 1px solid graybrand
           padding: 1em 0
           margin: 1em 0
-          width: 100%
           &:first-child
-            background: white
+            border: none
         a
-          color: darkbrand
+          color: white
           border-bottom: none
           +below(800px)
 

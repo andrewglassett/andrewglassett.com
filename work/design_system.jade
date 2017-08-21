@@ -1,5 +1,5 @@
 ---
-title: 'Style Guide'
+title: 'Design System'
 _content: false
 thumbnail: 'styleguide-thumb.jpg'
 ---
@@ -9,20 +9,20 @@ extends ../views/_single_post_layout
 block content
   #post
     .info
-      a.back(href='/#work') &larr; Back Home
+      a.back(href='/') &larr; Back Home
       .workers
         ul
           li Design, Code, Branding:
             a(href='//andrewglassett.com' target='_blank') Me
-          li Link:
-            a(href='http://design.theorchard.io/styleguide-proposed/index.html' target='_blank') Styleguide
+          li V1 Link:
+            a(href='http://design.theorchard.io/styleguide/index.html' target='_blank') Styleguide
+  
     .hero.styleguide
-      //- h1
-      //-   span Mapping a Trail Through the Style Guide Forest
+
     .story
       //- .caption 
       //-   p An application without a styleguide is like hiking without navigation. You may eventually "arrive" somewhere, but you may ask: How did I get here? How do you get back? Where do I go next?
-      h1 Creating a Styleguide from Scratch
+      h1 The Journey from Styleguide to Design System
       p More than just rules about style, a good styleguide paints a picture about where a brand is headed, especially if you are redesigning. The more context designers provide as to where, when, how and why a particular style should be used, the less confusing it will be anyone who ends up needing to understand a design concept down the road. 
       p Engineers traditionally have the most to gain from these guidelines, but creating a clear and concise style guide will help other designers have less confusion about a how a particular component / style should look and behave. It is also beneficial for product managers and anyone who is dealing with the overall strategy of a brand or product to see how we speak to our users via our interface. How do our users know what they should do next? How do they get more immediate information? 
       h2 Inconsistencies are Hard to Maintain
@@ -53,24 +53,26 @@ block content
           p This first version uses <a href='https://github.com/styledown/styledown' target='_blank'>Styledown</a> a markdown based styleguide generator.
       p It was very useful in portraying the vision of the redesign to everyone, especially for those teams who were working to reduce the number of diffs through the applications. 
       p The biggest use was that of debugging the CSS. Because we had all of the elements on one page, we could easily demonstrate the issues that come along with the cascade.
-      p This first version of the styleguide was immediately useful to most everyone, but it was obvious to me that this was a stop gap solution. To get a styleguide that was truly powerful, it would need to be included in the actual build process of the app. It needed to eventually turn into a pattern library.
+      p This first version of the styleguide was immediately useful to most everyone, but it was obvious to me that this was a stop gap solution. To get a styleguide that was truly powerful, it would need to be included in the actual build process of the app. It needed to eventually turn into a design system.
       h2 What I Learned
       p It is very easy get out of sync if you aren’t paying attention. I think there are currently too many variables that make this current styleguide somewhat unstable. 
       p If an engineer is unaware that there are existing styles and then creates his/her own solution, it could potentially carry over to other parts of the application.
       p If a designer doesn’t understand the intended UX of a particular element, their designs weaken the system as a whole. 
       p Maintenance is slightly painful. I really enjoy working on style guides, but when updating or adding a component, I have to manually change a few files and then update the version on the CDN. 
 
-      p Research is crucial, it is important that I continue to ask questions, such as who will be using this style guide? What do they need to complete their tasks? Are there other groups that could benefit from this information?
-      h2 Version 2: The Future
-      p The immediate future of this version of the style guide is to make sure that is portable and shareable. Creating a github repo would be a good first place to create a history. Also, the application's CSS files have become programmatically versioned, which means we need to update our current styleguide to keep in sync. This is a little tricky because the current styleguide lives outside of build process. 
-
-      p The bigger future goal would be to use React as our main source of style guiding. Currently, 1/4 of our products are using React, but that number is projected to go higher. When we hit 50% of React based products, it will be time to use React to render our styles for us during the build process. 
-
-      p This is better for a lot of reasons, the most important being that the styleguide will always be in sync because it will only render available components. This would be nice for me personally because I could spend less time implementing the style guide and more time crafting the language of the design system. 
-      .img-md
-        img(src='../img/case_studies/styleguide/react.jpg')
+      h2 Version 2
+      p For version 2, the styleguide began it's slow morph into a full design system. Through a series of collaborations with engineers, we created a React version of the design system that could be easily imported, and became a part of the workflow of the engineer, rather than just a reference.
+      .img-lg
+        img(src='../img/case_studies/styleguide/react-design-system1.png')
         .caption 
-          p The first inklings of the React Styleguide.
+          p The code for buttons with associated props
+      
+
+      p This is better for a lot of reasons, the most important being that the styleguide will always be in sync because it will only render available components. We also created a way for the new design system to display all of the components at once so designers could reference the document and see what components we already have available.
+      .img-md
+        img(src='../img/case_studies/styleguide/react-design-system2.png')
+        .caption 
+          p The next version will show all the props too.
           
-    .title
-      h3 Check out another case study:
+    //- .title
+    //-   h3 Check out another case study:

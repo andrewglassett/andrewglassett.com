@@ -1,32 +1,143 @@
 #home
   col()
   background: white
-  padding: 2em
+  padding: 0 2em
   +below(mobile)
     padding: 0 2em
-  #top
-    center(1300px)
-    +below(mobile)
-      margin: 1em
-    #intro
-      col()
-      padding: 4em 0
-      +below(mobile)
-        padding: 0
+  // h1.txtwav.slow.big
+  //   +below(mobile)
+  //     display:none
+  // h2.txt.wav.slow.big
+  //   +below(mobile)
+  //     display: none
 
-      .blurb
-        // col(4/5)
+  .header
+    col()
+    h1
+      font-size: 5.5em
+      margin: 0
+      padding: .5em 0
+      +below(mobile)
+        font-size: 3em
+        text-align: center;
+    h2
+      font-size: 5.5em
+      margin: 0
+      padding: 1em 0 .5em 0
+      +below(1363px)
+        font-size: 4em
+      +below(mobile)
+        font-size: 3em
+        text-align: center;
+
+  .companies
+    col()
+    a.company
+      col(1/5)
+      background graybrand
+      border-bottom: 2px solid graybrand
+      &:hover
+        background graybrand2
+      +below(mobile)
+        col(1/2)
+        background: graybrand
+        margin: 0
+        margin-bottom: 2em
+        text-align: center
+      img
+        border: none
+
+
+  .problems
+    col()
+    a.problem
+      col()
+      background: graybrand
+      color: darkbrand
+      padding: 2em
+      margin-bottom: 2em
+      display block
+      border-radius: 5px
+      min-height: 105px
+      border-bottom: 2px solid graybrand
+        &:hover
+          background: graybrand2
+
+        +below(mobile)
+          background: graybrand
+          margin-bottom: 2em
+      img
+        col(1/8)
+        border: none;
         +below(mobile)
           col()
-          padding: 1em 0
-          text-align: center
-        h3.big
-          font-size: 2em
-          line-height: 1.7
-          +below(mobile)
-            font-size: 1.5em
+          padding:5% 25%
 
-      .blurb2
-        center(800px)
-        float: right
-        padding: 1em 0
+
+      .text
+        col(7/8)
+        padding-left: 4%
+        +below(mobile)
+          col()
+      // .casestudy
+      //   col(2/8)
+      p
+        margin-bottom: 0
+
+      span
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        background: darkbrand
+        color: graybrand2
+        padding: 4px
+        // filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+.about
+  col()
+  padding: 2em
+  background: graybrand2
+  .img
+    col(1/2)
+    +below(mobile)
+      col()
+  .description
+    col(1/2)
+    padding: 8%
+    +below(mobile)
+      col()
+  // .casestudies
+  //   col()
+  //   a.casestudy
+  //     col(1/2)
+  //     border-bottom: none;
+  //     &:hover
+  //       border-bottom: none;
+  //       background: graybrand;
+  // #top
+  //   center(1300px)
+  //   +below(mobile)
+  //     margin: 1em
+  //   #intro
+  //     col()
+  //     padding: 4em 0
+  //     +below(mobile)
+  //       padding: 0
+  //
+  //     .blurb
+  //       // col(4/5)
+  //       +below(mobile)
+  //         col()
+  //         padding: 1em 0
+  //         text-align: center
+  //       h3.big
+  //         font-size: 2em
+  //         line-height: 1.7
+  //         +below(mobile)
+  //           font-size: 1.5em
+  //
+  //     .blurb2
+  //       center(800px)
+  //       float: right
+  //       padding: 1em 0

@@ -9,8 +9,7 @@ base()
 }
 html
   box-sizing: border-box;
-  font-family: "yrsa",sans-serif;
-  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  font-family: 'Nimbus Sans', monospace;
 
 body
   margin: 0 auto
@@ -18,11 +17,11 @@ body
   background: white
   color: darkbrand
 
+
 h1
   font-size: 5em
   +below(1000px)
     font-size: 3em
-  font-weight: 100
 h2
   font-size: 3em
   +below(1000px)
@@ -42,9 +41,7 @@ p
   margin-left: auto
   margin-right: auto
 
-h1, h2, h3, h4
-  font-family: "nimbus-sans", sans-serif;
-  font-weight: 500;
+// h1, h2, h3, h4
 
 h1 {
   opacity: 1;
@@ -138,8 +135,9 @@ a {
 }
 
 a, a:visited
-  color: andrew3
+  color: darkbrand
   transition: all .1s linear
+  text-decoration: none
 img
   max-width: 100%
   border: 2px solid graybrand
@@ -175,20 +173,10 @@ pre
   padding: 1em
   border: 1px dotted lightgray
 
-a, a:visited
-  padding: .2em 0em
-  color: lightbrand
-  text-decoration: none
-  border-bottom: 1px solid #f4f4f4
 
-  &:hover
-    // transform: scale(1.04545)
-    // outline: 10px solid hoverbrand
-    color: hoverbrand
-    border-bottom: 3px solid hoverbrand
 ul
   list-style-type: none
-  
+
 @import '_footer'
 @import '_header'
 @import '_home'
