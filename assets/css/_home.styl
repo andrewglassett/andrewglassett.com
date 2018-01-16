@@ -3,7 +3,7 @@
   background: white
   padding: 0 2em
   +below(mobile)
-    padding: 0 2em
+    padding: 0 1em
   // h1.txtwav.slow.big
   //   +below(mobile)
   //     display:none
@@ -29,9 +29,17 @@
       +below(mobile)
         font-size: 3em
         text-align: center;
-
+    h1.txtwav, h2.txtwav
+      +below(mobile)
+        display: none
+    h1.mobile, h2.mobile, h3.mobile
+      text-align:center;
+      +above(mobile)
+        display none
   .companies
     col()
+    +below(mobile)
+      display: none
     a.company
       col(1/5)
       background graybrand
@@ -39,7 +47,7 @@
       &:hover
         background graybrand2
       +below(mobile)
-        col(1/2)
+        col()
         background: graybrand
         margin: 0
         margin-bottom: 2em
@@ -49,38 +57,33 @@
 
 
   .problems
-    col()
+    width: 100%
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    height: 100%;
+
     a.problem
-      col()
+      width: 47%
       background: graybrand
       color: darkbrand
+      text-align: center;
       padding: 2em
-      margin-bottom: 2em
-      display block
+      margin: 1.5%
       border-radius: 5px
-      min-height: 105px
       border-bottom: 2px solid graybrand
         &:hover
           background: graybrand2
 
         +below(mobile)
+          width: 100%
           background: graybrand
-          margin-bottom: 2em
+          margin-bottom: 5%
       img
-        col(1/8)
+        col()
+        padding: 5% 25%
         border: none;
-        +below(mobile)
-          col()
-          padding:5% 25%
 
-
-      .text
-        col(7/8)
-        padding-left: 4%
-        +below(mobile)
-          col()
-      // .casestudy
-      //   col(2/8)
       p
         margin-bottom: 0
 
@@ -97,6 +100,7 @@
 .about
   col()
   padding: 2em
+  margin: 1% 0
   background: graybrand2
   .img
     col(1/2)
@@ -107,6 +111,12 @@
     padding: 8%
     +below(mobile)
       col()
+    ul
+      margin: 0
+      padding: 0
+      li
+        display: inline-block
+        padding-right: 1em
   // .casestudies
   //   col()
   //   a.casestudy

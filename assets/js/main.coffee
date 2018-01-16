@@ -22,6 +22,7 @@ require ['jquery', 'fitvid', 'modal', 'particle', 'txtwav', 'prism'], ($) ->
   dotColor: "#000000"
   lineColor: "#000000"
 
+
   $('.video, #modal').fitVids()
 
   $(document).ready ($) ->
@@ -44,3 +45,4 @@ require ['jquery', 'fitvid', 'modal', 'particle', 'txtwav', 'prism'], ($) ->
 
   #close modal with esc key
   $(document).keyup (e) -> $.modal.close() if e.keyCode is 27
+     
